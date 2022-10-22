@@ -113,41 +113,43 @@
 
     <section>
       <div
-        class="mx-44 mb-44 mt-20 grid grid-cols-2 gap-28"
+        class="mx-12 grid md:mx-44 md:mb-20 md:mt-20 md:grid-cols-2 md:gap-28"
       >
         <!-- kontakt information -->
         <div
-          class="flex flex-col gap-10"
+          class="grid gap-5 md:flex md:flex-col md:gap-10"
         >
-          <h6 class="mb-12 uppercase">
+          <h6
+            class="mb-5 mt-10 uppercase md:mb-12"
+          >
             let me help you
           </h6>
           <div
-            class="grid grid-cols-2 gap-10"
+            class="grid md:grid-cols-2 md:gap-10"
           >
             <p
-              class="cont_text col-start-1"
+              class="cont_text md:col-start-1"
             >
               E-mail
             </p>
             <p>
               <a
-                class="p_footer col-start-2"
+                class="p_footer md:col-start-2"
                 href="mailto: tania.jorgensen@outlook.com"
                 >tania.jorgensen@outlook.com</a
               >
             </p>
           </div>
           <div
-            class="grid grid-cols-2 gap-10"
+            class="grid md:grid-cols-2 md:gap-10"
           >
             <p
-              class="cont_text col-start-1"
+              class="cont_text md:col-start-1"
             >
               Mobile no.
             </p>
             <p
-              class="p_footer col-start-2"
+              class="p_footer md:col-start-2"
             >
               <a href="tel:22374355"
                 >+45 22 37 43 55</a
@@ -155,15 +157,15 @@
             </p>
           </div>
           <div
-            class="grid grid-cols-2 gap-10"
+            class="grid md:grid-cols-2 md:gap-10"
           >
             <p
-              class="cont_text col-start-1"
+              class="cont_text md:col-start-1"
             >
               Social
             </p>
             <p
-              class="p_footer col-start-2"
+              class="p_footer md:col-start-2"
             >
               <a
                 href="https://www.linkedin.com/in/taniajorgensen/"
@@ -176,89 +178,57 @@
         <!-- Input felt -->
 
         <form
+          class="my-10 grid gap-5"
           method="post"
           name="myemailform"
           action="form-to-email.php"
         >
           <p>
-            <label for="name"
-              >Enter Name: </label
+            <label
+              for="name"
+              class="p_footer"
+              >Dit navn: </label
             ><br />
             <input
+              class="p_footer rounded-md bg-green_light"
               type="text"
               name="name"
+              placeholder="Tania Jørgensen"
             />
           </p>
           <p>
-            <label for="email"
-              >Enter Email
-              Address:</label
+            <label
+              for="email"
+              class="p_footer"
+              >Din e-mail:</label
             ><br />
             <input
+              class="p_footer rounded-md bg-green_light"
               type="text"
               name="email"
+              placeholder="Tania@domæne.dk"
             />
           </p>
           <p>
-            <label for="message"
-              >Enter Message:</label
+            <label
+              for="message"
+              class="p_footer"
+              >Din besked:</label
             >
             <br />
             <textarea
               name="message"
+              class="p_footer rounded-md bg-green_light"
             ></textarea>
           </p>
+
           <input
+            class="cont_text w-52 rounded-xl bg-green_dark p-5 text-2xl drop-shadow-2xl hover:text-beige_light lg:w-60"
             type="submit"
             name="submit"
             value="submit"
           />
         </form>
-
-        <!-- <div class="mt-10 ml-12">
-          <h3 class="mb-10">
-            Interested in a
-            collaboration?
-          </h3>
-          <div
-            class="flex flex-col gap-5"
-          >
-            <div class="flex gap-5">
-              <div>
-                <p class="input_text">
-                  Name
-                </p>
-                <input
-                  class="rounded-xl border-4 border-green_light bg-beige_dark"
-                  type="text"
-                />
-              </div>
-              <div>
-                <label
-                  for="email"
-                  class="input_text"
-                  >Email</label
-                >
-                <input
-                  class="rounded-xl border-4 border-green_light bg-beige_dark"
-                  type="text"
-                  name="email"
-                />
-              </div>
-            </div>
-            <div>
-              <div class="">
-                <p class="input_text">
-                  Message
-                </p>
-                <input
-                  class="h-44 w-full rounded-xl border-4 border-green_light bg-beige_dark"
-                  type="text"
-                />
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </section>
 
@@ -306,8 +276,10 @@
           class="collab my-6 flex justify-center rounded-xl bg-beige_light px-5 drop-shadow-2xl"
         >
           <button class="btn_contact">
-            Interested in a
-            collaboration?
+            <a href="contact.html">
+              Interested in a
+              collaboration?</a
+            >
           </button>
         </div>
       </div>
