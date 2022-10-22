@@ -1,3 +1,168 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  font-family: quiche-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 75px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: quiche-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+}
+
+h3 {
+  font-family: kepler-std, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+}
+
+h4 {
+  font-family: ibm-plex-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 50px;
+}
+
+h5 {
+  font-family: kepler-std, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+}
+
+h6 {
+  font-family: quiche-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+}
+
+p {
+  font-family: kepler-std, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+}
+
+.p_footer {
+  font-family: ibm-plex-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.p_footer_bold,
+.p_footer:hover {
+  font-family: ibm-plex-sans, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.qoute,
+.cont_text,
+.input_text,
+.course_text,
+li {
+  font-family: quiche-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+}
+
+li:hover {
+  color: #484f37;
+  border-bottom: 2px solid;
+}
+
+.selected {
+  color: #484f37;
+  border-bottom: 2px solid;
+}
+.input_text {
+  font-family: quiche-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+}
+input[type="text"]:focus {
+  border: none;
+  background-color: #6c7653;
+  color: white;
+}
+
+.btn_contact {
+  font-family: kepler-std, serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 22px;
+}
+.insight_text {
+  font-family: kepler-std, serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 25px;
+}
+
+.collab:hover {
+  background-color: #6c7653;
+  box-shadow: inset 0 2px 4px 0
+    rgb(0 0 0 / 0.5);
+  color: white;
+}
+
+body {
+  background-color: #f8ebdb;
+}
+
+section {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  li {
+    color: black;
+  }
+
+  li:hover {
+    color: #f8ebdb;
+    border-bottom: 2px solid;
+  }
+  .selected {
+    color: #f8ebdb;
+    border-bottom: 2px solid;
+  }
+}
+
+/* ------------------------------ */
+
+/* nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+}
+
+#burger {
+  display: none;
+} */

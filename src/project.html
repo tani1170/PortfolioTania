@@ -11,15 +11,16 @@
       rel="stylesheet"
       href="https://use.typekit.net/dax8hro.css"
     />
-
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
 
-    <title>Nostalgic Designing</title>
+    <title>Projects</title>
   </head>
   <body>
+    <!-------- Navigation --------->
+
     <header class="w-screen">
       <div
         class="mx-auto flex items-center justify-between bg-green_dark py-4 md:bg-transparent"
@@ -27,6 +28,8 @@
         <div class="ml-10">
           <h2>portfolio</h2>
         </div>
+
+        <!-- burger svg -->
         <button
           id="toggle"
           class="mr-2 md:hidden"
@@ -60,6 +63,8 @@
             />
           </svg>
         </button>
+
+        <!-- navigation -->
         <nav
           id="nav"
           class="fixed top-20 bottom-0 -right-full w-80 bg-green_dark transition-all md:static md:w-auto md:bg-transparent md:pr-12"
@@ -69,14 +74,14 @@
           >
             <li>
               <a
-                class="selected block p-3"
+                class="block p-3"
                 href="index.html"
                 >Home</a
               >
             </li>
             <li>
               <a
-                class="block p-3"
+                class="selected block p-3"
                 href="project.html"
                 >projects</a
               >
@@ -106,6 +111,7 @@
         </nav>
       </div>
     </header>
+
     <!-- call to action -->
     <div
       class="sm:hidden md:fixed md:top-36 md:block"
@@ -118,134 +124,131 @@
         >
       </li>
     </div>
-    <section
-      class="grid h-screen place-items-center md:grid-cols-6 md:grid-rows-4 lg:grid-cols-6"
-    >
+
+    <section>
+      <!-- project introduction -->
+
       <div
-        class="static top-10 grid md:top-0 md:z-10 md:col-span-4 md:col-start-3 md:row-start-3 md:grid-cols-3 md:grid-rows-3 lg:col-start-3 lg:grid-cols-5"
+        class="mx-10 md:mx-32 lg:mx-44"
       >
-        <h1
-          class="font-bold md:col-start-2 md:row-start-1"
-        >
-          Nostalgic
-          <hr />
-        </h1>
-
-        <h1
-          class="ml-8 md:col-start-3 md:row-start-2"
-        >
-          Designing
-          <hr />
-        </h1>
-        <h5
-          class="sm:hidden md:col-span-3 md:col-start-4 md:row-start-3 md:block"
-        >
-          portfolio of Tania Jørgensen
-        </h5>
-      </div>
-      <img
-        class="grid w-2/3 md:col-span-2 md:col-start-2 md:row-start-2 md:row-end-4 md:w-full"
-        src="/img/profile.png"
-        alt=""
-      />
-
-      <div>
-        <h5
-          class="col-start-4 row-start-3 md:hidden"
-        >
-          portfolio of Tania Jørgensen
-        </h5>
-      </div>
-    </section>
-
-    <section
-      class="mt-10 bg-green_dark"
-    >
-      <div
-        class="md:grid md:grid-cols-2"
-      >
-        <div
-          class="md:grid-start-1 border-black p-10 text-white md:ml-20"
-        >
-          <div class="">
-            <h3 class="">
-              Nice to meet you
-            </h3>
-            <h4 class="uppercase">
-              Ready to create some
-              magic?
-            </h4>
-          </div>
-          <p class="mt-7">
-            As a digital designer, I
-            focus on adapting the user
-            journey to the individual
-            customer or the individual
-            project. <br />
-            I create designs that cover
-            and speak to the need, so
-            that visuality and
-            functionality can provide
-            the best experience.
+        <div class="mb-10 grid">
+          <h6
+            class="mb-5 mt-10 uppercase"
+          >
+            websites
+          </h6>
+          <p class="md:mr-28">
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor
+            incididunt ut labore et
+            dolore magna aliqua. Ut enim
+            ad minim veniam, quis
+            nostrud exercitation ullamco
+            laboris nisi ut aliquip ex
+            ea commodo consequat.
           </p>
         </div>
+
+        <!-- School Projects -->
+
+        <div class="mb-10">
+          <h2 class="mb-5 md:mb-10">
+            School projects
+          </h2>
+          <div
+            class="grid gap-5 md:flex md:gap-10 lg:mx-28"
+          >
+            <div
+              class="grid gap-5 md:grid-rows-3 md:gap-10"
+            >
+              <div
+                class="border border-black"
+              >
+                <img
+                  class="border border-black"
+                  src="img/Boletteangel.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="border border-black"
+              >
+                <img
+                  src="img/grob.png"
+                  alt=""
+                />
+              </div>
+              <img
+                class="border border-black"
+                src="img/webfeature.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="grid gap-5 md:grid-rows-3 md:gap-10"
+            >
+              <img
+                class="border border-black"
+                src="img/Siptip.png"
+                alt=""
+              />
+              <img
+                class="border border-black"
+                src="img/Unesco.png"
+                alt=""
+              />
+              <img
+                class="border border-black"
+                src="img/Portfolio_v1.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal  Projects -->
+
         <div
-          class="md:grid-start-2 border-black md:ml-20 md:flex md:place-content-center md:border-l"
+          class="mb-10 md:mt-20 md:mb-28"
         >
-          <img class=" md:p-8 max-w-lg"
-          src=/img/illustration.svg
-          alt="" />
+          <h2 class="mb-5 md:mb-10">
+            Personal projects
+          </h2>
+
+          <div
+            class="grid gap-5 md:mx-28 md:flex md:gap-10"
+          >
+            <div
+              class="border border-black"
+            >
+              <img
+                src="img/ccf.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="border border-black"
+            >
+              <img
+                src="img/marie.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="border border-black"
+            >
+              <img
+                src="img/visitkort.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="mb-16">
-      <div
-        class="mx-10 mt-8 grid gap-5 md:mx-40 md:grid-cols-2 md:grid-rows-2"
-      >
-        <!-------- The Designer -------->
-        <div
-          class="md:col-start-1 md:row-span-2 md:row-start-1 md:grid md:place-content-center"
-        >
-          <a href="about.html ">
-            <h4 class="uppercase">
-              The deisgner
-            </h4>
-            <img
-              class="md:min-w-sm md:max-h-sm border-2 border-black p-4"
-              src="/img/designergreen.svg"
-              alt=""
-            />
-          </a>
-        </div>
-        <!-------- Project -------->
-        <div
-          class="md:col-start-2 md:row-span-2 md:row-start-1 md:grid md:gap-5"
-        >
-          <a href="project.html">
-            <h4 class="uppercase">
-              Projects
-            </h4>
-            <img
-              class="md:min-w-sm border-2 border-black p-4 md:max-w-sm"
-              src="/img/projectsgreen.svg"
-              alt=""
-            />
-          </a>
-          <a href="insight.html">
-            <h4 class="uppercase">
-              Indsigt
-            </h4>
-            <img
-              class="md:min-w-sm border-2 border-black p-4 md:max-w-sm"
-              src="/img/insightgreen.svg"
-              alt=""
-            />
-          </a>
-        </div>
-      </div>
-    </section>
-
+    <!-- footer -->
     <footer
       class="bg-green_light py-12"
     >
