@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/dax8hro.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Contact information</title>
+    <script type="module" crossorigin src="./assets/main.3244297e.js"></script>
+    <link rel="stylesheet" href="./assets/contact.4ce3eaee.css">
+  </head>
+  <body>
+    <!-------- Navigation --------->
+    <header class="w-screen">
+      <div
+        class="mx-auto flex items-center justify-between bg-green_dark py-4 md:bg-beige_light"
+      >
+        <div class="ml-10">
+          <h2>portfolio</h2>
+        </div>
+
+        <!-- burger svg -->
+        <button
+          id="toggle"
+          class="mr-2 md:hidden"
+        >
+          <svg
+            class="h-10 w-10 text-white"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line
+              x1="3"
+              y1="12"
+              x2="21"
+              y2="12"
+            />
+            <line
+              x1="3"
+              y1="6"
+              x2="21"
+              y2="6"
+            />
+            <line
+              x1="3"
+              y1="18"
+              x2="21"
+              y2="18"
+            />
+          </svg>
+        </button>
+
+        <!-- navigation -->
+        <nav
+          id="nav"
+          class="fixed top-20 bottom-0 -right-full w-80 bg-green_dark transition-all md:static md:w-auto md:bg-beige_light md:pr-12"
+        >
+          <ul
+            class="ml-3 md:flex md:gap-10"
+          >
+            <li>
+              <a
+                class="block p-3"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="block p-3"
+                href="project.html"
+                >projects</a
+              >
+            </li>
+            <li>
+              <a
+                class="block p-3"
+                href="about.html"
+                >about</a
+              >
+            </li>
+            <li>
+              <a
+                class="block p-3"
+                href="insight.html"
+                >insight</a
+              >
+            </li>
+            <li>
+              <a
+                class="selected block p-3"
+                href="contact.html"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <div
+        class="mx-44 mb-44 mt-20 grid grid-cols-2 gap-28"
+      >
+        <!-- kontakt information -->
+        <div
+          class="flex flex-col gap-10"
+        >
+          <h6 class="mb-12 uppercase">
+            let me help you
+          </h6>
+          <div
+            class="grid grid-cols-2 gap-10"
+          >
+            <p
+              class="cont_text col-start-1"
+            >
+              E-mail
+            </p>
+            <p>
+              <a
+                class="p_footer col-start-2"
+                href="mailto: tania.jorgensen@outlook.com"
+                >tania.jorgensen@outlook.com</a
+              >
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-10"
+          >
+            <p
+              class="cont_text col-start-1"
+            >
+              Mobile no.
+            </p>
+            <p
+              class="p_footer col-start-2"
+            >
+              <a href="tel:22374355"
+                >+45 22 37 43 55</a
+              >
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-10"
+          >
+            <p
+              class="cont_text col-start-1"
+            >
+              Social
+            </p>
+            <p
+              class="p_footer col-start-2"
+            >
+              <a
+                href="https://www.linkedin.com/in/taniajorgensen/"
+                >linkedin/taniajorgensen</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- Input felt -->
+
+        <form
+          method="post"
+          name="myemailform"
+          action="form-to-email.php"
+        >
+          <p>
+            <label for="name"
+              >Enter Name: </label
+            ><br />
+            <input
+              type="text"
+              name="name"
+            />
+          </p>
+          <p>
+            <label for="email"
+              >Enter Email
+              Address:</label
+            ><br />
+            <input
+              type="text"
+              name="email"
+            />
+          </p>
+          <p>
+            <label for="message"
+              >Enter Message:</label
+            >
+            <br />
+            <textarea
+              name="message"
+            ></textarea>
+          </p>
+          <input
+            type="submit"
+            name="submit"
+            value="submit"
+          />
+        </form>
+
+        <!-- <div class="mt-10 ml-12">
+          <h3 class="mb-10">
+            Interested in a
+            collaboration?
+          </h3>
+          <div
+            class="flex flex-col gap-5"
+          >
+            <div class="flex gap-5">
+              <div>
+                <p class="input_text">
+                  Name
+                </p>
+                <input
+                  class="rounded-xl border-4 border-green_light bg-beige_dark"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="input_text"
+                  >Email</label
+                >
+                <input
+                  class="rounded-xl border-4 border-green_light bg-beige_dark"
+                  type="text"
+                  name="email"
+                />
+              </div>
+            </div>
+            <div>
+              <div class="">
+                <p class="input_text">
+                  Message
+                </p>
+                <input
+                  class="h-44 w-full rounded-xl border-4 border-green_light bg-beige_dark"
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer
+      class="bg-green_light py-12"
+    >
+      <div
+        class="mx-20 grid md:flex md:justify-around"
+      >
+        <!-------- kontakt informationer ------>
+        <div class="grid gap-2">
+          <p class="p_footer_bold">
+            Contact
+          </p>
+          <div class="">
+            <p>
+              <a
+                class="p_footer"
+                href="mailto: tania.jorgensen@outlook.com"
+                >tania.jorgensen@outlook.com</a
+              >
+            </p>
+            <p class="p_footer">
+              <a href="tel:22374355"
+                >+45 22 37 43 55</a
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-4 grid gap-1 md:mt-0"
+        >
+          <p class="p_footer_bold">
+            Social
+          </p>
+          <p class="p_footer">
+            <a
+              href="https://www.linkedin.com/in/taniajorgensen/"
+              >linkedin/taniajorgensen</a
+            >
+          </p>
+        </div>
+        <div
+          class="collab my-6 flex justify-center rounded-xl bg-beige_light px-5 drop-shadow-2xl"
+        >
+          <button class="btn_contact">
+            Interested in a
+            collaboration?
+          </button>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
