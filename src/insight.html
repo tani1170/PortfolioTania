@@ -21,46 +21,103 @@
   <body>
     <!-------- Navigation --------->
 
-    <header class="h-28 w-screen">
-      <nav class="mx-16 my-10">
-        <ul
-          class="flex flex-row justify-end gap-10 uppercase"
+    <header class="w-screen">
+      <div
+        class="mx-auto flex items-center justify-between bg-green_dark py-4 md:bg-beige_light"
+      >
+        <div class="ml-10">
+          <h2>portfolio</h2>
+        </div>
+
+        <!-- burger svg -->
+        <button
+          id="toggle"
+          class="mr-2 md:hidden"
         >
-          <li>
-            <a href="index.html"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a href="project.html"
-              >projects</a
-            >
-          </li>
-          <li>
-            <a href="about.html"
-              >about</a
-            >
-          </li>
-          <li class="selected">
-            <a href="insight.html"
-              >insight</a
-            >
-          </li>
-          <li>
-            <a href="contact.html"
-              >contact</a
-            >
-          </li>
-        </ul>
-      </nav>
+          <svg
+            class="h-10 w-10 text-white"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line
+              x1="3"
+              y1="12"
+              x2="21"
+              y2="12"
+            />
+            <line
+              x1="3"
+              y1="6"
+              x2="21"
+              y2="6"
+            />
+            <line
+              x1="3"
+              y1="18"
+              x2="21"
+              y2="18"
+            />
+          </svg>
+        </button>
+
+        <!-- navigation -->
+        <nav
+          id="nav"
+          class="fixed top-20 bottom-0 -right-full w-80 bg-green_dark transition-all md:static md:w-auto md:bg-beige_light md:pr-12"
+        >
+          <ul
+            class="ml-3 md:flex md:gap-10"
+          >
+            <li>
+              <a
+                class="block p-3"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="block p-3"
+                href="project.html"
+                >projects</a
+              >
+            </li>
+            <li>
+              <a
+                class="block p-3"
+                href="about.html"
+                >about</a
+              >
+            </li>
+            <li>
+              <a
+                class="selected block p-3"
+                href="insight.html"
+                >insight</a
+              >
+            </li>
+            <li>
+              <a
+                class="block p-3"
+                href="contact.html"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- call to action -->
     <div
-      class="fixed col-start-1 row-start-1 flex self-end"
+      class="sm:hidden md:fixed md:top-44 md:block"
     >
       <li
-        class="sticky -rotate-90 list-none border-b-2 border-black"
+        class="border-black md:-rotate-90 md:list-none md:border-b-2"
       >
         <a href="contact.html"
           >Contact me</a
